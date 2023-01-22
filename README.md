@@ -63,10 +63,10 @@ Original Image:
 | **3x3** | ![3x3 whale](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/NQN_3x3_Sim_Snip2-smaller.png?raw=true) | ![3x3 background](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/NQN_3x3_Sim_Snip1-smaller.png?raw=true) | ![3x3 hist](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/3x3%20hist.jpeg?raw=true) |
 | **2x2** | ![2x2 whale](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/NQN_2x2_Sim_Snip2.jpeg?raw=true) | ![2x2 other](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/NQN_2x2_Sim_Snip1.jpeg?raw=true) | ![2x2 hist](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/2x2%20hist.jpeg?raw=true) |
 
-Notes:
+Notes and analysis:
 
+- If the resized image is fairly symmetrical, the inverses of the solutions will often produce results of equal probability. For example, the 2x2 graph has nearly equal representation for the solutions 0100 and 1011. Both produce the same cut, just with segments labeled oppositely.
 - 4x4: the 2^16 histogram outputs were filtered to improve readability
-- 2x2: the graph produced was very symmetrical, and therefore the results are as well
 
 ### IonQ Aria 1 result
 
