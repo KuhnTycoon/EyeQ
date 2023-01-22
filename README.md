@@ -1,6 +1,6 @@
 # EyeQ
 
-EyeQ seeks to explore the current capabilities and future potential of quantum computing in image segmentation. Our goal in the 2023 NQN Hackathon was to apply a quantum algorithm to solve a real-world problem in sub-classical time complexity. Prior image segmentation algorithms have traditionally been performed with the minimum-cut algorithm. However, [critics of this approach](https://youtu.be/2IVAznQwdS4) have pointed out issues regarding partition precision -- where some resulting cuts may be trivially small. A newer technique for image segmentation is performed via a [Max-Cut](https://en.wikipedia.org/wiki/Maximum_cut) algorithm, which is an NP-Hard problem. EyeQ seeks to achieve a quantum speedup on this NP-Hard problem.
+EyeQ seeks to explore the current capabilities and future potential of quantum computing in image segmentation. Our goal in the 2023 NQN Hackathon was to apply a quantum algorithm to solve a real-world problem in sub-classical time complexity. Prior image segmentation algorithms have traditionally been performed with the minimum-cut algorithm. However, [critics of this approach](https://youtu.be/2IVAznQwdS4) have pointed out issues regarding partition precision -- where some resulting cuts may be trivially small. A newer technique for image segmentation is performed via a [Max-Cut](https://en.wikipedia.org/wiki/Maximum_cut) algorithm, which is an NP-Hard problem. EyeQ seeks to use quantum computing to achieve a speedup on this NP-Hard problem.
 
 Image segmentation has a wide array of important applications. For example, in assessing drought conditions, an image of a lake can be segemented into water and land components, and compared over time*.
 
@@ -20,13 +20,22 @@ The notebook has a dependency on `qiskit[optimization]`. If this set of packages
 
 ## Usage
 
-Once `qiskit[optimization]` packages are installed, you are ready to run the notebook. At this point, you may run all cells and use an IonQ quantum computer to segment an image!
-
 At the top of the notebook is a cell with configuration options.
 
-THE ONLY CONFIGURATION REQUIRED **is to replace `azure_resource_id` with your own resource URL**
+```python
+### UPDATE WITH YOUR RESOURCE ID
+azure_resource_id = ""
 
-The defaults for the other options already work. You may replace the segmentation resolution `w_pixels` (number of pixels long an axis, image URL `url`, and also the quantum backend `backend_target`.
+w_pixels = 3
+url = 'https://img.freepik.com/premium-vector/simple-killer-whale-pixel-art-style_475147-1552.jpg?w=1380'
+backend_target = "ionq.simulator" # "ionq.qpu.aria-1" or "ionq.simulator"
+```
+
+The only configuration REQUIRED **is to put your resource URL in `azure_resource_id`.**
+
+The defaults for the other options already work. You may replace the segmentation resolution `w_pixels` (number of pixels along an axis), image URL `url`, and also the quantum backend `backend_target`.
+
+Once `qiskit[optimization]` packages are installed, you are ready to run the notebook. At this point, you may run all cells and use an IonQ quantum computer to segment an image!
 
 ## Explanation
 
