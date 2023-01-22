@@ -1,5 +1,5 @@
 # EyeQ
-EyeQ seeks to explore the current capabilities and future potential of quantum computing in image segmenting. Our goal in the 2023 NQN Hackathon was apply a quantum algorithm to solve a real-world problem in sub-classical time complexity. Image segmentation can be classically solved using [Max Cut](https://en.wikipedia.org/wiki/Maximum_cut), a NP-Hard algorithm. 
+EyeQ seeks to explore the current capabilities and future potential of quantum computing in image segmenting. Our goal in the 2023 NQN Hackathon was apply a quantum algorithm to solve a real-world problem in sub-classical time complexity. Image segmentation can be classically solved using [Max-Cut](https://en.wikipedia.org/wiki/Maximum_cut), a NP-Hard algorithm. 
 
 Image segmentation has a wide array of important applications. For example, if we want to assess drought conditions, we might take an image of a lake and segement it into water and non-water components, and compare the size of the water component to that of previous images of the same lake. 
 ![alt text](https://gray-kpho-prod.cdn.arcpublishing.com/resizer/_en_WcChMkuC4AFSSDXSZfRCr4I=/1200x675/smart/filters:quality(85)/cloudfront-us-east-1.images.arcpublishing.com/gray/VQIYN3ACPZFWZAEXYNCCGIXKRA.png)
