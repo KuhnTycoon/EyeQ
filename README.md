@@ -42,7 +42,7 @@ Once `qiskit[optimization]` packages are installed, you are ready to run the not
 
 ## Explanation
 
-<img width="1512" alt="Screenshot 2023-01-21 at 7 49 47 PM" src="https://user-images.githubusercontent.com/16888236/213899718-b245f7c7-a49a-4823-9ec1-003cdfd1117c.png">
+<img width="1512" alt="Screenshot 2023-01-21 at 7 49 47 PM" src="https://github.com/KuhnTycoon/EyeQ/blob/main/Images/whale_4_4.png?raw=true">
 
 **Preprocessing:** Images are condensed to the desired pixel dimensions—limited principally by the number of available qubits—using [bilinear image resizing](https://en.wikipedia.org/wiki/Bilinear_interpolation). The image is then converted into an undirected, weighted, and fully connected graph. Each pixel is mapped to a vertex and its edge weight to each other vertex is equal to their difference in color, calculated as the sum of the absolute value of differences in RGB channels.
 
