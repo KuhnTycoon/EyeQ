@@ -51,6 +51,10 @@ Once `qiskit[optimization]` packages are installed, you are ready to run the not
 
 Here is EyeQ segmenting the image into 2x2, 3x3, and 4x4 segmentation resolutions. With more qubits, EyeQ can scale to higher segmentation resolutions.
 
+Original Image:
+
+![og whale](https://img.freepik.com/premium-vector/simple-killer-whale-pixel-art-style_475147-1552.jpg?w=1380)
+
 ## Simulator results
 
 500 shot, 10 iterations
@@ -69,11 +73,11 @@ Background:
 
 Whale:
 
-![3x3 whale](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/NQN_3x3_Sim_Snip2.png?raw=true)
+![3x3 whale](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/NQN_3x3_Sim_Snip2-smaller.png?raw=true)
 
 Background:
 
-![3x3 background](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/NQN_3x3_Sim_Snip1.png?raw=true)
+![3x3 background](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/NQN_3x3_Sim_Snip1-smaller.png?raw=true)
 
 ### 4x4
 
