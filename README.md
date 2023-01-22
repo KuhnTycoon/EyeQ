@@ -1,6 +1,5 @@
 # EyeQ
-
-Our goal in the 2023 NQN Hackathon was apply a quantum algorithm to solve a real-world problem in sub-classical time complexity. We choose image segmentation as our problem, which can be classically solved using [Max Cut](https://en.wikipedia.org/wiki/Maximum_cut), a NP-Hard algorithm. 
+EyeQ seeks to explore the current capabilities and future potential of quantum computing in image segmenting. Our goal in the 2023 NQN Hackathon was apply a quantum algorithm to solve a real-world problem in sub-classical time complexity. Image segmentation can be classically solved using [Max Cut](https://en.wikipedia.org/wiki/Maximum_cut), a NP-Hard algorithm. 
 
 Image segmentation has a wide array of important applications. For example, if we want to assess drought conditions, we might take an image of a lake and segement it into water and non-water components, and compare the size of the water component to that of previous images of the same lake. 
 ![alt text](https://gray-kpho-prod.cdn.arcpublishing.com/resizer/_en_WcChMkuC4AFSSDXSZfRCr4I=/1200x675/smart/filters:quality(85)/cloudfront-us-east-1.images.arcpublishing.com/gray/VQIYN3ACPZFWZAEXYNCCGIXKRA.png)
@@ -8,12 +7,12 @@ Image segmentation has a wide array of important applications. For example, if w
 ![lake no water](https://raw.githubusercontent.com/KuhnTycoon/EyeQ/main/lakes_no_water.webp)
 ![lake only water](https://raw.githubusercontent.com/KuhnTycoon/EyeQ/main/lakes_only_water.webp)
 
-Our implementation of image segmentation is limited in resolution; since each pixel is represented by one qubit, and we can use up to 23 qubits, the largest images we split are 4-by-4. Nonetheless, this was a successful proof-of-concept for applying quantum computing, and a valuable learning experience.
+Our implementation of image segmentation is limited in resolution; since each pixel is represented by one qubit and we can use up to 23 qubits, the largest images we split are 4x4. Nonetheless, this was a successful proof-of-concept for applying quantum computing, and a valuable learning experience.
 
 Include photos of lakes, whales, farmers. Original photo, pixeled photo, split pixeled photo, and segmented original photo. Explain as qubits increase resolution will increase as well.
 
 ## Installation
-Using an Azure Quantum workspace, upload this notebook. 
+Ensure you have a working Python environment. Download this notebook and upload to a Microsoft Azure Quantum Workspace.
 
 ## Usage
 Explain how to run the notebook
