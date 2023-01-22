@@ -7,9 +7,7 @@ Image segmentation has a wide array of important applications. For example, if w
 ![lake no water](https://raw.githubusercontent.com/KuhnTycoon/EyeQ/main/lakes_no_water.webp)
 ![lake only water](https://raw.githubusercontent.com/KuhnTycoon/EyeQ/main/lakes_only_water.webp)
 
-Our implementation of image segmentation is limited in resolution; since each pixel is represented by one qubit and we can use up to 23 qubits, the largest images we split are 4x4. Nonetheless, this was a successful proof-of-concept for applying quantum computing, and a valuable learning experience.
-
-Include photos of lakes, whales, farmers. Original photo, pixeled photo, split pixeled photo, and segmented original photo. Explain as qubits increase resolution will increase as well.
+Our implementation of image segmentation is limited in resolution; as each pixel is represented by one qubit and Aria 1 has 23 qubits, the largest images we segmented were 4x4. Nonetheless, this was a successful quantum computing application proof-of-concept, and a valuable learning experience.
 
 ## Installation
 Ensure you have a working Python environment. Download this notebook and upload to a Microsoft Azure Quantum Workspace.
