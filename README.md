@@ -42,7 +42,7 @@ Once `qiskit[optimization]` packages are installed, you are ready to run the not
 
 ## Explanation
 
-<img width="1512" alt="Screenshot 2023-01-21 at 7 49 47 PM" src="https://github.com/KuhnTycoon/EyeQ/blob/main/Images/whale_4_4.png?raw=true">
+![workflow](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/workflow.png?raw=true)
 
 **Preprocessing:** Images are condensed to the desired pixel dimensions—limited principally by the number of available qubits—using [bilinear image resizing](https://en.wikipedia.org/wiki/Bilinear_interpolation). The image is then converted into an undirected, weighted, and fully connected graph. Each pixel is mapped to a vertex and its edge weight to each other vertex is equal to their difference in color, calculated as the sum of the absolute value of differences in RGB channels.
 
@@ -60,7 +60,36 @@ Original Image:
 
 ## Simulator results
 
-500 shot, 10 iterations
+8192 shots, 10 iterations
+
+### 4x4
+
+Whale:
+
+![4x4 whale](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/NQN_4x4_Sim_Snip2-.jpeg?raw=true)
+
+Background:
+
+![4x4 background](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/NQN_4x4_Sim_Snip1-.png?raw=true)
+
+Histogram (result probability vs bit string):
+
+![4x4 hist](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/4x4%20selective%20hist.jpeg?raw=true)
+
+Note: the 2^16 outputs were filtered to improve readability
+### 3x3
+
+Whale:
+
+![3x3 whale](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/NQN_3x3_Sim_Snip2-smaller.png?raw=true)
+
+Background:
+
+![3x3 background](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/NQN_3x3_Sim_Snip1-smaller.png?raw=true)
+
+Histogram:
+
+![3x3 hist](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/3x3%20hist.jpeg?raw=true)
 
 ### 2x2
 
@@ -72,35 +101,19 @@ Background:
 
 ![2x2 other](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/NQN_2x2_Sim_Snip1.jpeg?raw=true)
 
-### 3x3
+Histogram (Probability vs cut):
+![2x2 hist](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/2x2%20hist.jpeg?raw=true)
 
-Whale:
-
-![3x3 whale](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/NQN_3x3_Sim_Snip2-smaller.png?raw=true)
-
-Background:
-
-![3x3 background](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/NQN_3x3_Sim_Snip1-smaller.png?raw=true)
-
-### 4x4
-
-Whale:
-
-![4x4 whale](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/NQN_4x4_Sim_Snip1.png?raw=true)
-
-Background:
-
-![4x4 background](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/NQN_4x4_Sim_Snip2.png?raw=true)
+Note: with a 2x2 image, the graph produced was very symetrical, and therefore the results are as well
 
 ## IonQ Aria 1 result
 
-500 shots, 10 iterations, 2x2 segmentation
-
-
+8192 shots, 10 iterations, 3x3 segmentation
 
 ## Citations
 
 Guides, tutorials, and other resources referenced during this project:
+
 - [Microsoft Azure Quantum setup guide](https://learn.microsoft.com/en-us/azure/quantum/)
 - [Qiskit VQE Notebook](https://qiskit.org/documentation/optimization/tutorials/06_examples_max_cut_and_tsp.html)
 - [Reducing from 3-SAT to Max Cut](http://www.cs.cornell.edu/courses/cs4820/2014sp/notes/reduction-maxcut.pdf)
@@ -110,14 +123,14 @@ Guides, tutorials, and other resources referenced during this project:
 ### Color Representation
 
 In this project, we compared pixels by RGB channel values, attempting to quantify how similar or how different in color
-any two pixels are. However, there are other ways to digitally represent color, like HSV, that may yield more accurate results. For example, 
+any two pixels are. However, there are other ways to digitally represent color, like HSV, that may yield more accurate results. For example,
 two colors may be visually very different yet have one or two similar RGB channels, and therefore be grouped together; with HSV on the other hand, one could
 simply compare the Hue channels.
 
 ### Number of Qubits
 
-For this to be a practical method of performing image segmentation—or approach for solving similar graph-theoretic problems—access to more qubits is necessary. 
-In our approach, each pixel (each node in the graph) corresponds to one qubit, and the number of qubits required therefore scales quadratically with the 
+For this to be a practical method of performing image segmentation—or approach for solving similar graph-theoretic problems—access to more qubits is necessary.
+In our approach, each pixel (each node in the graph) corresponds to one qubit, and the number of qubits required therefore scales quadratically with the
 dimensions of the input image.
 
 ## Acknowledgements
@@ -131,5 +144,6 @@ for their help, patience, and good humor this weekend—this wouldn't have been 
 - Andrew Kuhn
 - Zeynep Toprakbasti
 - Kenneth Yang
+
 ---
 *Not computed by EyeQ
