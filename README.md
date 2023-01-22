@@ -10,7 +10,14 @@ Use Azure Quantum
 Explain how to run the notebook
 
 ## Explanation
-How does it work? Pixels map to graph. How are edge weights determined?
+**Preprocessing:**
+Images are condensed to the desired pixel dimensions using bilinear image resizing. The image is then converted into an undirected, weighted, and fully connected graph. Each pixel is mapped to a vertex and its edge weight to each other vertex is equal to their difference in color. (Sum of the absolute value of differences in RGB channels)
+
+**Quantum Algorithm:**
+The graph is converted to an Ising Hamiltonian which a Variational Quantum Eigensolver (VQE) then solves for the maximum-cut using a qubit for each vertex in the graph. This maximum-cut splits the vertices into two sets that have the greatest edge weights between the sets.
+
+**Postprocessing:**
+Based on the set assignments in the output, the pixels of the downsized image are grouped and the photo is split into two sets of pixels.
 
 ## Scaling
 Have demonstration of different sizes (Simulator AND QPU AND brute force)
