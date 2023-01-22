@@ -38,7 +38,7 @@ Histograms and graphs
 Guides, tutorials, and other resources referenced during this project:
 - [Microsoft Azure Quantum setup guide](https://learn.microsoft.com/en-us/azure/quantum/)
 - [Qiskit VQE Notebook](https://qiskit.org/documentation/optimization/tutorials/06_examples_max_cut_and_tsp.html)
-- 
+- [Reducing from 3-SAT to Max Cut](http://www.cs.cornell.edu/courses/cs4820/2014sp/notes/reduction-maxcut.pdf)
 ## Acknowledgements
 We would like to thank Microsoft, IonQ, and the whole NQN consortium for graciously hosting this hackathon. And a huge, huge thank you to the industy mentors
 for their help, patience, and good humor this weekend—this wouldn't have been possible without you!
