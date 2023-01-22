@@ -42,6 +42,14 @@ Here is EyeQ segmenting the image into 2x2, 3x3, and 4x4 segmentation resolution
 
 ### 2x2
 
+Whale:
+
+![2x2 whale](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/NQN_2x2_Sim_Snip2.jpeg?raw=true)
+
+Background:
+
+![2x2 other](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/NQN_2x2_Sim_Snip1.jpeg?raw=true)
+
 ### 3x3
 
 Whale:
