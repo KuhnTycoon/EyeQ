@@ -66,7 +66,7 @@ Original Image:
 Notes and analysis:
 
 - If the resized image is fairly symmetrical, the inverses of the solutions will often produce results of equal probability. For example, the 2x2 graph has nearly equal representation for the solutions 0100 and 1011. Both produce the same cut, just with segments labeled oppositely.
-- 4x4: the 2^16 histogram outputs were filtered to improve readability
+- 4x4: the 2^16 histogram outputs were filtered to show only the significant cuts to improve readability
 
 ### IonQ Aria 1 result
 
