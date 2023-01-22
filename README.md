@@ -10,24 +10,27 @@ Image segmentation has a wide array of important applications. For example, if w
 Our implementation of image segmentation is limited in resolution; as each pixel is represented by one qubit and Aria 1 has 23 qubits, the largest images we segmented were 4x4. Nonetheless, this was a successful quantum computing application proof-of-concept, and a valuable learning experience.
 
 ## Installation
-Ensure you have a working Python environment. Download this notebook and upload to a Microsoft Azure Quantum Workspace.
+
+Download this notebook and upload to a Microsoft Azure Quantum Workspace (see citations section for instructions on setup). Alternatively, you may use a local Azure Python setup if you have one configured.
+
+The notebook has a dependency on `qiskit[optimization]`. If this set of packages is not available in your working environment, run the first code cell or run `pip install qiskit[optimization]` in your environment. Restart your notebook's kernel if necessary.
 
 ## Usage
-Explain how to run the notebook
+
+Once `qiskit[optimization]` packages are installed, you are ready to run the notebook. At this point, you may run all cells and use an IonQ quantum computer to segment an image!
+
+At the top of the notebook is a cell with some optional configuration options. The defaults there already work. You may replace the image URL with one you supply and also change the segmentation resolution.
 
 ## Explanation
-**Preprocessing:**
-Images are condensed to the desired pixel dimensions—limited principally by the number of available qubits—using bilinear image resizing. The image is then converted into an undirected, weighted, and fully connected graph. Each pixel is mapped to a vertex and its edge weight to each other vertex is equal to their difference in color. (Sum of the absolute value of differences in RGB channels).
 
+<img width="1512" alt="Screenshot 2023-01-21 at 7 49 47 PM" src="https://user-images.githubusercontent.com/16888236/213899718-b245f7c7-a49a-4823-9ec1-003cdfd1117c.png">
 
+**Preprocessing:** Images are condensed to the desired pixel dimensions—limited principally by the number of available qubits—using bilinear image resizing. The image is then converted into an undirected, weighted, and fully connected graph. Each pixel is mapped to a vertex and its edge weight to each other vertex is equal to their difference in color. (Sum of the absolute value of differences in RGB channels).
 
-**Quantum Algorithm:**
-The graph is converted to an Ising Hamiltonian which a Variational Quantum Eigensolver (VQE) then solves for the maximum-cut using a qubit for each vertex in the graph. This maximum-cut splits the vertices into two sets that have the greatest edge weights between the sets.
+**Quantum Algorithm:** The graph is converted to an Ising Hamiltonian which a Variational Quantum Eigensolver (VQE) then solves for the maximum-cut using a qubit for each vertex in the graph. This maximum-cut splits the vertices into two sets that have the greatest edge weights between the sets.
 
-**Postprocessing:**
-Based on the set assignments in the output, the pixels of the downsized image are grouped and the photo is split into two sets of pixels.
+**Postprocessing:** Based on the set assignments in the output, the pixels of the downsized image are grouped and the photo is split into two sets of pixels.
 
-![graphs](https://github.com/KuhnTycoon/EyeQ/blob/main/whale_diagram-removebg-preview%20(1).png?raw=true)
 
 ## Scaling
 
