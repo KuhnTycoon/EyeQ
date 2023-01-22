@@ -44,6 +44,8 @@ Here is EyeQ segmenting the image into 2x2, 3x3, and 4x4 segmentation resolution
 
 ## Simulator results
 
+500 shot, 10 iterations
+
 ### 2x2
 
 Whale:
@@ -73,6 +75,12 @@ Whale:
 Background:
 
 ![4x4 background](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/NQN_4x4_Sim_Snip2.png?raw=true)
+
+## IonQ Aria 1 result
+
+500 shots, 10 iterations, 2x2 segmentation
+
+
 
 ## Citations
 
