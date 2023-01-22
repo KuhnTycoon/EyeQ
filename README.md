@@ -64,6 +64,16 @@ Background:
 
 ![3x3 background](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/3x3-other.jpeg?raw=true)
 
+### 4x4
+
+Whale:
+
+![4x4 whale](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/NQN_4x4_Sim_Snip1.png?raw=true)
+
+Background:
+
+![4x4 background](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/NQN_4x4_Sim_Snip2.png?raw=true)
+
 ## Citations
 
 Guides, tutorials, and other resources referenced during this project:
