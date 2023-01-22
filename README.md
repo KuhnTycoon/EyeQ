@@ -1,10 +1,10 @@
 # EyeQ
-Write and introduction here TODO
+EyeQ seeks to explore the current capabilities and future potential of quantum computing in photo segmenting. 
+
 Include photos of lakes, whales, farmers. Original photo, pixeled photo, split pixeled photo, and segmented original photo. Explain as qubits increase resolution will increase as well.
 
 ## Installation
-Run this notebook
-Use Azure Quantum
+Ensure you have a working Python environment. Download this notebook and upload to a Microsoft Azure Quantum Workspace.
 
 ## Usage
 Explain how to run the notebook
