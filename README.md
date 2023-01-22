@@ -19,7 +19,7 @@ EyeQ's implementation of image segmentation is limited in resolution; as each pi
 
 Download this notebook and upload to a [Microsoft Azure Quantum Workspace](https://learn.microsoft.com/en-us/azure/quantum/). Alternatively, you may use a local Azure Python setup if you have one configured.
 
-The notebook has a dependency on `qiskit[optimization]`. If this set of packages is not available in your working environment, run the first code cell or run `pip install qiskit[optimization]` in your environment. Restart your notebook's kernel if necessary.
+The notebook has a dependency on `qiskit[optimization]` and `wget`. If this set of packages is not available in your working environment, run the 2nd and 3rd code cell (under Imports) or run `pip install qiskit[optimization] wget` in your environment. Restart your notebook's kernel if necessary.
 
 ## Usage
 
@@ -36,9 +36,9 @@ backend_target = "ionq.simulator" # "ionq.qpu.aria-1" or "ionq.simulator"
 
 The only configuration REQUIRED **is to put your resource URL in `azure_resource_id`.**
 
-The defaults for the other options already work. You may replace the segmentation resolution `w_pixels` (number of pixels along an axis), image URL `url`, and also the quantum backend `backend_target`.
+The defaults for the other options already work. You may replace the segmentation resolution `w_pixels` (number of pixels along an axis) and the quantum backend `backend_target`. We've provided the URL to a sample image for convenience.
 
-Once `qiskit[optimization]` packages are installed, you are ready to run the notebook. At this point, you may run all cells and use an IonQ quantum computer to segment an image!
+Once the packages are installed, you are ready to run the notebook. At this point, you may run all cells and use an IonQ quantum computer to segment an image!
 
 ## Explanation
 
@@ -50,7 +50,7 @@ Once `qiskit[optimization]` packages are installed, you are ready to run the not
 
 **Postprocessing:** Based on the set assignments in the output, the pixels of the downsized image are grouped and the photo is split into two sets of pixels.
 
-## Scaling
+## Results & Scaling
 
 Here is EyeQ segmenting the image into 2x2, 3x3, and 4x4 segmentation resolutions. With more qubits, EyeQ can scale to higher segmentation resolutions.
 
@@ -58,11 +58,11 @@ Original Image:
 
 ![og whale](https://img.freepik.com/premium-vector/simple-killer-whale-pixel-art-style_475147-1552.jpg?w=1380)
 
-## Simulator results
+### Simulator results
 
 8192 shots, 10 iterations
 
-### 4x4
+#### 4x4
 
 Whale:
 
@@ -77,7 +77,8 @@ Histogram (result probability vs bit string):
 ![4x4 hist](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/4x4%20selective%20hist.jpeg?raw=true)
 
 Note: the 2^16 outputs were filtered to improve readability
-### 3x3
+
+#### 3x3
 
 Whale:
 
@@ -91,7 +92,7 @@ Histogram:
 
 ![3x3 hist](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/3x3%20hist.jpeg?raw=true)
 
-### 2x2
+#### 2x2
 
 Whale:
 
@@ -106,7 +107,7 @@ Histogram (Probability vs cut):
 
 Note: with a 2x2 image, the graph produced was very symetrical, and therefore the results are as well
 
-## IonQ Aria 1 result
+### IonQ Aria 1 result
 
 8192 shots, 10 iterations, 3x3 segmentation
 
