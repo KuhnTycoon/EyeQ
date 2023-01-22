@@ -33,11 +33,23 @@ At the top of the notebook is a cell with some optional configuration options. T
 
 **Postprocessing:** Based on the set assignments in the output, the pixels of the downsized image are grouped and the photo is split into two sets of pixels.
 
-
 ## Scaling
 
-Have demonstration of different sizes (Simulator AND QPU AND brute force)
-Histograms and graphs
+Here is EyeQ segmenting the image into 2x2, 3x3, and 4x4 segmentation resolutions. With more qubits, EyeQ can scale to higher segmentation resolutions.
+
+## Simulator results
+
+### 2x2
+
+### 3x3
+
+Whale:
+
+![3x3 whale](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/3x3-whale.jpeg?raw=true)
+
+Background:
+
+![3x3 background](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/3x3-other.jpeg?raw=true)
 
 ## Citations
 
