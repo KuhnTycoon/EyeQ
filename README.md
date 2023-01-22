@@ -4,11 +4,9 @@ EyeQ seeks to explore the current capabilities and future potential of quantum c
 
 Image segmentation has a wide array of important applications in the natural sciences, applied mathematics, and machine learning. For example, researchers might use satellite photos of lakes or bodies of water to quantify drought conditions—to do so, an image can be segmented into water and land components, and compared over time, as shown below*:
 
-**Original Image**
-![alt text](https://gray-kpho-prod.cdn.arcpublishing.com/resizer/_en_WcChMkuC4AFSSDXSZfRCr4I=/1200x675/smart/filters:quality(85)/cloudfront-us-east-1.images.arcpublishing.com/gray/VQIYN3ACPZFWZAEXYNCCGIXKRA.png)
-
-**Water Extracted From Image**
-![lake only water](https://raw.githubusercontent.com/KuhnTycoon/EyeQ/main/Images/lakes_only_water.webp)
+| Original Image | Water Extracted from Image |
+| - | - |
+| ![lakes](https://gray-kpho-prod.cdn.arcpublishing.com/resizer/_en_WcChMkuC4AFSSDXSZfRCr4I=/1200x675/smart/filters:quality(85)/cloudfront-us-east-1.images.arcpublishing.com/gray/VQIYN3ACPZFWZAEXYNCCGIXKRA.png) | ![lake only water](https://raw.githubusercontent.com/KuhnTycoon/EyeQ/main/Images/lakes_only_water.webp) |
 
 EyeQ's implementation of image segmentation is limited in resolution; as each pixel is represented by one qubit and Aria 1 has 23 qubits, the largest images segmented were 4x4. Nonetheless, this was a successful quantum computing application proof-of-concept and a valuable learning experience.
 
@@ -53,56 +51,22 @@ Here is EyeQ segmenting the image into 4x4, 3x3, and 2x2 segmentation resolution
 
 Original Image:
 
-![og whale](https://img.freepik.com/premium-vector/simple-killer-whale-pixel-art-style_475147-1552.jpg?w=1380)
+<img src="https://img.freepik.com/premium-vector/simple-killer-whale-pixel-art-style_475147-1552.jpg?w=1380" width=300>
 
 ### Simulator results
 
 8192 shots, 10 iterations
 
-#### 4x4
+| Resolution | Whale | Background | Histogram (probability vs cut solution) |
+| - | - | - | - |
+| **4x4** | ![4x4 whale](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/NQN_4x4_Sim_Snip2-.jpeg?raw=true) | ![4x4 background](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/NQN_4x4_Sim_Snip1-.png?raw=true) | ![4x4 hist](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/4x4%20selective%20hist.jpeg?raw=true) |
+| **3x3** | ![3x3 whale](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/NQN_3x3_Sim_Snip2-smaller.png?raw=true) | ![3x3 background](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/NQN_3x3_Sim_Snip1-smaller.png?raw=true) | ![3x3 hist](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/3x3%20hist.jpeg?raw=true) |
+| **2x2** | ![2x2 whale](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/NQN_2x2_Sim_Snip2.jpeg?raw=true) | ![2x2 other](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/NQN_2x2_Sim_Snip1.jpeg?raw=true) | ![2x2 hist](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/2x2%20hist.jpeg?raw=true) |
 
-Whale:
+Notes:
 
-![4x4 whale](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/NQN_4x4_Sim_Snip2-.jpeg?raw=true)
-
-Background:
-
-![4x4 background](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/NQN_4x4_Sim_Snip1-.png?raw=true)
-
-Histogram (result probability vs bit string):
-
-![4x4 hist](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/4x4%20selective%20hist.jpeg?raw=true)
-
-Note: the 2^16 outputs were filtered to improve readability
-
-#### 3x3
-
-Whale:
-
-![3x3 whale](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/NQN_3x3_Sim_Snip2-smaller.png?raw=true)
-
-Background:
-
-![3x3 background](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/NQN_3x3_Sim_Snip1-smaller.png?raw=true)
-
-Histogram:
-
-![3x3 hist](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/3x3%20hist.jpeg?raw=true)
-
-#### 2x2
-
-Whale:
-
-![2x2 whale](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/NQN_2x2_Sim_Snip2.jpeg?raw=true)
-
-Background:
-
-![2x2 other](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/NQN_2x2_Sim_Snip1.jpeg?raw=true)
-
-Histogram (Probability vs cut):
-![2x2 hist](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/2x2%20hist.jpeg?raw=true)
-
-Note: with a 2x2 image, the graph produced was very symmetrical, and therefore the results are as well
+- 4x4: the 2^16 histogram outputs were filtered to improve readability
+- 2x2: the graph produced was very symmetrical, and therefore the results are as well
 
 ### IonQ Aria 1 result
 
