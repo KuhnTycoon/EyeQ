@@ -22,7 +22,11 @@ The notebook has a dependency on `qiskit[optimization]`. If this set of packages
 
 Once `qiskit[optimization]` packages are installed, you are ready to run the notebook. At this point, you may run all cells and use an IonQ quantum computer to segment an image!
 
-At the top of the notebook is a cell with some optional configuration options. The defaults there already work. You may replace the image URL with one you supply and also change the segmentation resolution.
+At the top of the notebook is a cell with configuration options.
+
+THE ONLY CONFIGURATION REQUIRED **is to replace `azure_resource_id` with your own resource URL**
+
+The defaults for the other options already work. You may replace the segmentation resolution `w_pixels` (number of pixels long an axis, image URL `url`, and also the quantum backend `backend_target`.
 
 ## Explanation
 
