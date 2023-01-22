@@ -52,7 +52,7 @@ Once the packages are installed, you are ready to run the notebook. At this poin
 
 ## Results & Scaling
 
-Here is EyeQ segmenting the image into 2x2, 3x3, and 4x4 segmentation resolutions. With more qubits, EyeQ can scale to higher segmentation resolutions.
+Here is EyeQ segmenting the image into 4x4, 3x3, and 2x2 segmentation resolutions. With more qubits, EyeQ can scale to higher segmentation resolutions.
 
 Original Image:
 
