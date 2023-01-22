@@ -1,13 +1,15 @@
 # EyeQ
-EyeQ seeks to explore the current capabilities and future potential of quantum computing in image segmenting. Our goal in the 2023 NQN Hackathon was apply a quantum algorithm to solve a real-world problem in sub-classical time complexity. Image segmentation can be classically solved using [Max-Cut](https://en.wikipedia.org/wiki/Maximum_cut), a NP-Hard algorithm. 
 
-Image segmentation has a wide array of important applications. For example, if we want to assess drought conditions, we might take an image of a lake and segement it into water and non-water components, and compare the size of the water component to that of previous images of the same lake. 
+EyeQ seeks to explore the current capabilities and future potential of quantum computing in image segmentation. Our goal in the 2023 NQN Hackathon was to apply a quantum algorithm to solve a real-world problem in sub-classical time complexity. Prior image segmentation algorithms have traditionally been performed with the minimum-cut algorithm. However, [critics of this approach](https://youtu.be/2IVAznQwdS4) have pointed out issues regarding partition precision -- where some resulting cuts may be trivially small. A newer technique for image segmentation is performed via a [Max-Cut](https://en.wikipedia.org/wiki/Maximum_cut) algorithm, which is an NP-Hard problem. EyeQ seeks to achieve a quantum speedup on this NP-Hard problem.
+
+Image segmentation has a wide array of important applications. For example, in assessing drought conditions, an image of a lake can be segemented into water and land components, and compared over time.
+
 ![alt text](https://gray-kpho-prod.cdn.arcpublishing.com/resizer/_en_WcChMkuC4AFSSDXSZfRCr4I=/1200x675/smart/filters:quality(85)/cloudfront-us-east-1.images.arcpublishing.com/gray/VQIYN3ACPZFWZAEXYNCCGIXKRA.png)
 
 ![lake no water](https://raw.githubusercontent.com/KuhnTycoon/EyeQ/main/lakes_no_water.webp)
 ![lake only water](https://raw.githubusercontent.com/KuhnTycoon/EyeQ/main/lakes_only_water.webp)
 
-Our implementation of image segmentation is limited in resolution; as each pixel is represented by one qubit and Aria 1 has 23 qubits, the largest images we segmented were 4x4. Nonetheless, this was a successful quantum computing application proof-of-concept, and a valuable learning experience.
+EyeQ's implementation of image segmentation is limited in resolution; as each pixel is represented by one qubit and Aria 1 has 23 qubits, the largest images segmented were 4x4. Nonetheless, this was a successful quantum computing application proof-of-concept, and a valuable learning experience.
 
 ## Installation
 
@@ -38,10 +40,13 @@ Have demonstration of different sizes (Simulator AND QPU AND brute force)
 Histograms and graphs
 
 ## Citations
+
 Guides, tutorials, and other resources referenced during this project:
 - [Microsoft Azure Quantum setup guide](https://learn.microsoft.com/en-us/azure/quantum/)
 - [Qiskit VQE Notebook](https://qiskit.org/documentation/optimization/tutorials/06_examples_max_cut_and_tsp.html)
 - [Reducing from 3-SAT to Max Cut](http://www.cs.cornell.edu/courses/cs4820/2014sp/notes/reduction-maxcut.pdf)
+
 ## Acknowledgements
+
 We would like to thank Microsoft, IonQ, and the whole NQN consortium for graciously hosting this hackathon. And a huge, huge thank you to the industy mentors
 for their help, patience, and good humor this weekend—this wouldn't have been possible without you!
