@@ -1,5 +1,9 @@
 # EyeQ
 
+| Whale | Sunset | Butterfly |
+| - | - | - |
+| ![whale](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/whaleslider.gif?raw=true) | ![sunset](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/SLIDINGSUN.gif?raw=true) | ![butterfly](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/BUTTERSLIDER.gif?raw=true) |
+
 EyeQ seeks to explore the current capabilities and future potential of quantum computing in image segmentation. Our goal in the 2023 NQN Hackathon was to apply a quantum algorithm to solve a real-world problem in sub-classical time complexity. Prior image segmentation algorithms have traditionally been performed with the minimum-cut algorithm. However, [critics of this approach](https://youtu.be/2IVAznQwdS4) have pointed out issues regarding partition precision—where some resulting cuts may be trivially small. A newer technique for image segmentation is performed via a [Max-Cut](https://en.wikipedia.org/wiki/Maximum_cut) algorithm, which is an NP-Hard problem. EyeQ seeks to use quantum computing to achieve a speedup on this NP-Hard problem.
 
 Image segmentation has a wide array of important applications in the natural sciences, applied mathematics, and machine learning. For example, researchers might use satellite photos of lakes or bodies of water to quantify drought conditions—to do so, an image can be segmented into water and land components, and compared over time, as shown below:
