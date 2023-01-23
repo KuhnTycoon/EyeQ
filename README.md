@@ -80,6 +80,12 @@ Notes and analysis:
 | - | - | - |
 | ![](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/3x3%20qpu%20whale.jpeg?raw=true) | ![](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/3x3%20qpu%20other.jpeg?raw=true) | ![](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/3x3%20qpu%20hist.jpeg?raw=true) |
 
+Due to time and cost constraints, EyeQ was restricted to 10 iterations which as affects on accuracy. Here is the classical solution compared to the QPU's solution:
+
+| Classical max cut | QPU max cut |
+| - | - |
+| ![](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/classical%20graph.png?raw=true) | ![](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/qpu%20graph.jpeg?raw=true) |
+
 ## Citations
 
 Guides, tutorials, and other resources referenced during this project:
