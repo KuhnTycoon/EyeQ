@@ -10,6 +10,7 @@ Image segmentation has a wide array of important applications in the natural sci
 
 | Scaled Image | Water Area Extracted by EyeQ |
 | - | - |
+| ![](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/Lakes%20resized.png?raw=true) | ![](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/Lakes%20water%20sim.png?raw=true) |
 
 EyeQ's implementation of image segmentation is limited in resolution; as each pixel is represented by one qubit and Aria 1 has 23 qubits, the largest images segmented were 4x4. Nonetheless, this was a successful quantum computing application proof-of-concept and a valuable learning experience.
 
