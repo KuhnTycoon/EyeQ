@@ -10,7 +10,7 @@ EyeQ seeks to explore the current capabilities and future potential of quantum c
 
 Image segmentation has a wide array of important applications in the natural sciences, applied mathematics, and machine learning. For example, researchers might use satellite photos of lakes or bodies of water to quantify drought conditions—to do so, an image can be segmented into water and land components, and compared over time, as shown below:
 
-| Original Image | Water Extracted from Image* |
+| Original Image | Water Extracted from Image |
 | - | - |
 | ![lakes](https://gray-kpho-prod.cdn.arcpublishing.com/resizer/_en_WcChMkuC4AFSSDXSZfRCr4I=/1200x675/smart/filters:quality(85)/cloudfront-us-east-1.images.arcpublishing.com/gray/VQIYN3ACPZFWZAEXYNCCGIXKRA.png) | ![lake only water](https://raw.githubusercontent.com/KuhnTycoon/EyeQ/main/Images/lakes_only_water.webp) |
 
@@ -130,6 +130,3 @@ for their help, patience, and good humor this weekend—this wouldn't have been 
 - Andrew Kuhn ([KuhnTycoon](https://github.com/KuhnTycoon))
 - Zeynep Toprakbasti ([ladybuglady](https://github.com/ladybuglady))
 - Kenneth Yang ([microBob](https://github.com/microBob))
-
----
-*Not computed by EyeQ
