@@ -86,14 +86,6 @@ Due to time and cost constraints, EyeQ was restricted to 10 iterations which as 
 | - | - |
 | ![](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/classical%20graph.png?raw=true) | ![](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/qpu%20graph.jpeg?raw=true) |
 
-## Citations
-
-Guides, tutorials, and other resources referenced during this project:
-
-- [Microsoft Azure Quantum setup guide](https://learn.microsoft.com/en-us/azure/quantum/)
-- [Qiskit VQE Notebook](https://qiskit.org/documentation/optimization/tutorials/06_examples_max_cut_and_tsp.html)
-- [Reducing from 3-SAT to Max Cut](http://www.cs.cornell.edu/courses/cs4820/2014sp/notes/reduction-maxcut.pdf)
-
 ## Limitations and Future Considerations
 
 ### Color Representation
@@ -109,12 +101,20 @@ For this to be a practical method of performing image segmentation—or approach
 In our approach, each pixel (each node in the graph) corresponds to one qubit, and the number of qubits required therefore scales quadratically with the
 dimensions of the input image.
 
+## Citations
+
+Guides, tutorials, and other resources referenced during this project:
+
+- [Microsoft Azure Quantum setup guide](https://learn.microsoft.com/en-us/azure/quantum/)
+- [Qiskit VQE Notebook](https://qiskit.org/documentation/optimization/tutorials/06_examples_max_cut_and_tsp.html)
+- [Reducing from 3-SAT to Max Cut](http://www.cs.cornell.edu/courses/cs4820/2014sp/notes/reduction-maxcut.pdf)
+
 ## Acknowledgements
 
 We would like to thank Microsoft, IonQ, and the whole NQN consortium for graciously hosting this hackathon. And a huge, huge thank you to the industry mentors
 for their help, patience, and good humor this weekend—this wouldn't have been possible without you!
 
-## Development team
+### Development team
 
 - William Galvin
 - Andrew Kuhn
