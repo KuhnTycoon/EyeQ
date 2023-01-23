@@ -78,13 +78,17 @@ Notes and analysis:
 
 | Whale | Background | Histogram |
 | - | - | - |
-| ![](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/3x3%20qpu%20whale.jpeg?raw=true) | ![](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/3x3%20qpu%20other.jpeg?raw=true) | ![](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/3x3%20qpu%20hist.jpeg?raw=true) |
+| ![whale](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/3x3%20qpu%20whale.jpeg?raw=true) | ![back](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/3x3%20qpu%20other.jpeg?raw=true) | ![hist](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/3x3%20qpu%20hist.jpeg?raw=true) |
 
-Due to time and cost constraints, EyeQ was restricted to 10 iterations which as affects on accuracy. Here is the classical solution compared to the QPU's solution:
+Due to time and cost constraints, EyeQ was restricted to 10 iterations which has effects on accuracy. There is also a lot more noise in the solution output space as compared to the noiseless simulator's computation.
+
+The noise in combination with the lower iteration count contributes to the error in the output. For example, here is the classical solution compared to the QPU's solution:
 
 | Classical max cut | QPU max cut |
 | - | - |
-| ![](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/classical%20graph.png?raw=true) | ![](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/qpu%20graph.jpeg?raw=true) |
+| ![classical](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/classical%20graph.png?raw=true) | ![qpu](https://github.com/KuhnTycoon/EyeQ/blob/main/Images/qpu%20graph.jpeg?raw=true) |
+
+While there is some overlap in the QPU's max cut solution compared to the classical solution, they are not 100% in agreement.
 
 ## Limitations and Future Considerations
 
