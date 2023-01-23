@@ -126,10 +126,10 @@ for their help, patience, and good humor this weekend—this wouldn't have been 
 
 ### Development team
 
-- William Galvin
-- Andrew Kuhn
-- Zeynep Toprakbasti
-- Kenneth Yang
+- William Galvin ([william-galvin](https://github.com/william-galvin))
+- Andrew Kuhn ([KuhnTycoon](https://github.com/KuhnTycoon))
+- Zeynep Toprakbasti ([ladybuglady](https://github.com/ladybuglady))
+- Kenneth Yang ([microBob](https://github.com/microBob))
 
 ---
 *Not computed by EyeQ
